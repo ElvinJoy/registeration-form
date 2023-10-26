@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reg_Form_1</title>
+    <link rel="stylesheet" href="../css/form1.css" />
+  </head>
+  <body>
+    <form
+      id="form"
+      action="./action1.html"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <div class="container">
+        <h1>REGISTERATION FORM</h1>
+
+        <div id="box">
+          <div id="div1">
+            <div class="name all">NAME :</div>
+            <div><input type="text" value="" name="name" id="name" /></div>
+          </div>
+
+          <div id="div2">
+            <div class="last_name all">LAST NAME :</div>
+            <div><input type="text" name="last name" id="last_name" /></div>
+          </div>
+
+          <div id="div3">
+            <div class="address all">ADDRESS :</div>
+            <div>
+              <textarea
+                value=""
+                name="address"
+                id="address"
+                cols="26"
+                rows="5"
+              ></textarea>
+            </div>
+          </div>
+
+          <!-- <div id="div4">
+            <div class="age all">AGE :</div>
+            <div>
+              <select name="age" id="age">
+                <option value="please select your age">
+                  please select your age
+                </option>
+                <option value="0-10">0-10</option>
+                <option value="10-20">10-20</option>
+                <option value="20-30">20-30</option>
+                <option value="30-40">30-40</option>
+                <option value="40+">40+</option>
+              </select>
+            </div>
+          </div> -->
+
+          <div id="div5">
+            <div class="mail all">EMAIL ID :</div>
+            <div><input type="text" value="" name="email id" id="mail" /></div>
+          </div>
+
+          <div id="div6">
+            <div class="password all">PASSWORD :</div>
+            <div>
+              <input type="password" value="" name="password" id="password" />
+            </div>
+          </div>
+
+          <div id="div7">
+            <div class="number all">PHONE NUMBER :</div>
+            <div>
+              <input type="tel" value="" name="phone number" id="number" />
+            </div>
+          </div>
+
+          <div id="div8">
+            <div class="photo all">PHOTO :</div>
+            <div>
+              <input type="file" value="" name="photo" id="photo" multiple />
+            </div>
+            <div id="error" class="error-message">
+              Errors will be printed here
+            </div>
+          </div>
+
+          <div id="buttons">
+            <input type="reset" value="clear" />
+            <input type="button" value="submit" onclick="validate()" />
+          </div>
+        </div>
+      </div>
+    </form>
+    <script src="../js/form1.js"></script>
+  </body>
+</html>
